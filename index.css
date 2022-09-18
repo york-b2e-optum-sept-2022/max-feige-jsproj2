@@ -1,0 +1,209 @@
+/*
+    Generic/Setup
+*/
+body
+{
+    display: flex;
+    height:98%;
+    flex-direction: column;
+    background-color:#FAE8EB;
+    margin: 0px;
+    padding: 0px;
+}
+div
+{
+    border-radius: 0.5rem;
+
+}
+
+
+/*
+    Start of text area section
+*/
+.text-check
+{
+    display: flex;
+}
+textarea
+{
+    display: inline-block;
+    width:90%;
+    height: 14vh;
+    margin: 0.2em;
+    font-size:2vh;
+}
+.TA
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    font-size: 4vh;
+    margin: 0.2em;
+    background-color: #90EE90;
+}
+#md5-hash
+{
+    font-size: 1.1vw;
+}
+
+/*
+Set up the info sections for http and for user info
+*/
+#info
+{
+    display:flex;
+    justify-content: space-around;
+}
+.sub-info
+{
+    width: 33.33%;
+    border: 1px solid black;
+    margin: 1px;
+    height: 60vh;
+}
+/*
+    Clock section CSS
+*/
+canvas
+{
+    width:85%;
+    height:85%;
+}
+#time-display
+{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#d7746f;
+}
+#time-text
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: 3vh;
+}
+/*
+Start of user info section, including CSS to make the list look nice
+
+*/
+#user-info
+{
+    background-color: #754668;
+}
+#user-info-results
+{
+    text-align: center;
+    font-size: 4vh;
+    color: white;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%- 10px;
+}
+   
+li 
+{
+    font: 2vh Helvetica, sans-serif;
+    border: 1px solid #000;
+    border-bottom: none;
+    background-color: #E4C2C6
+}
+
+li:last-child
+{
+    border-bottom: 1px solid #000;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover 
+{
+    font-size: 2.5vh;
+    background: #FAE8EB;
+}
+
+/*
+    Start of http header test sectoin
+*/
+#http-info
+{
+    background-color: #a95972;
+    overflow-y: auto;
+}
+#http-label
+{
+    padding: 10px;
+    margin: 0px;
+    font-size: 2vw;
+}
+
+
+.collapsible 
+{
+    background-color: #754668;
+    color: white;
+    cursor: pointer;
+    padding: 1vh;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2.5vh;
+    max-height: 5vh;
+}
+  
+.active, .collapsible:hover 
+{
+    background-color: #392232;
+}
+
+.collapsibleContent 
+{
+    font-size: 2vh;
+    padding: 0rem;
+    padding-left: 1rem;
+    max-height: 0rem;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+    background-color: #E4C2C6;
+    border-radius: 1px;
+    display:flex;
+    align-items: center;
+}
+
+
+/*
+    Last div with info setup
+*/
+#end
+{
+
+    font-size: 3vh;
+    background-color: #ffc662;
+    height: 80%;
+    border: 2px solid black;
+    text-align: center;
+    
+
+    
+}
+
+
+#json-verify
+{
+    font-size: 3vh;
+}

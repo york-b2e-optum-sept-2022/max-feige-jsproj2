@@ -1,0 +1,88 @@
+<!--
+
+
+    Create a webpage to use the JSON Test by jsontest api with the following features:
+
+    Display the user’s current public IP address
+
+    Display the HTTP Headers
+
+    Display the current Date and Time updated every second
+
+    Allow the user to submit any text and check to see if it is valid JSON, and inform them what is wrong if it is not valid
+
+    Allow the user to submit some text, and calculate the MD5 of that text
+
+    Requirements:
+
+    Your code shall be pushed to GitHub under the York organization
+
+    The repository shall be named ‘<first_name>-<last_name>-jsproj2’
+
+    i.e. Tom Cruise’s repository will be named ‘tom-cruise-jsproj2’
+
+    The project shall be written entirely in HTML, JavaScript and CSS.
+-->
+
+<html>
+    <title>York Training Lightweight Website</title>
+    <head>
+        <link rel = "stylesheet", href="index.css">
+    </head>
+    <script src = "text-check.js" defer></script>
+    <body>
+        <div id = "info">
+            <div class = "sub-info" id = "user-info">
+                <ul>
+                    <li><a href = "#" onmouseover="DisplayInfo(1)" >IP: </a></li>
+                    <li><a href = "#" onmouseover="DisplayInfo(2)" >Approximate Location:</a></li>
+                    <li><a href = "#" onmouseover="DisplayInfo(3)" >Cookies Enabled:</a></li>
+                    <li><a href = "#" onmouseover="DisplayInfo(4)" >Number Of Cores:</a></li>
+                    <li><a href = "#" onmouseover="DisplayInfo(5)" >Resolution: </a></li>
+                    <li><a href = "#" onmouseover="DisplayInfo(6)" >Browser Size: </a></li>
+                </ul>
+                <div id = "user-info-results">RESULTS</div>
+            </div>
+            <script src = "user-info.js"></script>
+            <div class = "sub-info" id = "http-info">
+                Sending HTTP Request to http://headers.jsontest.com/
+                <ul>
+
+                </ul>
+            </div>
+            <script src = "headers.js"></script>
+            <div class = "sub-info" id = "time-display">
+                <div id = "time-text">3:45</div>
+                <canvas id="clock-render" ></canvas>
+                <script src = "clock.js"></script>
+            </div>
+        </div>
+        <div class = "text-check">
+            <div class = "TA" id = "json-valid">
+                <div id = "json-label"></div>
+                <div id = "json-verify"></div>
+                </div>
+            <textarea id = "json-text" onkeyup = "SetLastJSONStroke()">{
+    "Creator": "Max Feige",
+    "Company": "York"
+}</textarea>
+            
+        </div>
+        <div class = "text-check">
+            <div class = "TA"> 
+                <div id = "md5-label">MD5 Hash:</div>
+                <div id = "md5-hash"></div>    
+            
+            </div>
+            <textarea id = "md5-text" onkeyup = "SetLastMD5Stroke()">MD5 Hashes are very useful in cryptography.</textarea>
+        </div>
+        <div id = "end">
+            <b>
+            Created by Max Feige <br/>
+            2022 <br/>
+            York Solutions <br/>
+            </b>
+        </div>
+        
+    </body>
+</html>
